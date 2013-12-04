@@ -25,14 +25,14 @@ shinyServer(function(input, output) {
   ### Logos
   output$logo <- renderImage({
     
-    filename <- "/home/guzman/Documentos/FREPLATA/APP/Ema/Logos/logo_ema_freplata.png"
+    filename <- "https://dl.dropboxusercontent.com/u/49775366/Ema/logo_ema_freplata.png"
     
     list(src = filename,
          contentType = 'image/png')
   }, deleteFile = FALSE)
   output$logo2 <- renderImage({
     
-    filename <- "https://dl.dropboxusercontent.com/u/49775366/Shiny/logos_salinidad.png"
+    filename <- "https://dl.dropboxusercontent.com/u/49775366/Ema/logos_salinidad.png"
     
     list(src = filename,
          contentType = 'image/png')
