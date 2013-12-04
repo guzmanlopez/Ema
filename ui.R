@@ -279,7 +279,7 @@ shinyUI(pageWithSidebar(
                                  
                                  p(style="text-align:justify",strong('Karoly Antal. (2012).'),'gnumeric: Read data from files readable by gnumeric. R package version 0.7-2.',a("http://CRAN.R-project.org/package=gnumeric",href="http://CRAN.R-project.org/package=gnumeric",target="_blank")),
                                  tags$hr(),
-HTML('<div style="clear: left;"><img src="https://dl.dropboxusercontent.com/u/49775366/Shiny/foto_perfil.jpg" alt="" style="float: left; margin-right:5px" /></div>'),
+HTML('<div style="clear: left;"><img src="https://dl.dropboxusercontent.com/u/49775366/Ema/foto_perfil.jpg" alt="" style="float: left; margin-right:5px" /></div>'),
 strong('Autor'),
 p(a('Guzmán López', href="http://www.linkedin.com/pub/guzm%C3%A1n-l%C3%B3pez/59/230/812", target="_blank"),' - guzilop@gmail.com',
 br(),
@@ -290,6 +290,7 @@ br()) # Acerca de este programa
                         ))
 ))
     
+
 
 
 
