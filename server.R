@@ -277,14 +277,32 @@ shinyServer(function(input, output) {
   })
   # Hist
   output$choose_columns_hist <- renderUI({
-    if(is.null(datasetInput()))
-      return("")
     
-    # Get the data set with the appropriate name
-    colnames <- names(datasetInput())
+    if(is.null(datasetInput())) return("")
     
-    # Create the checkboxes and select them all by default
-    selectInput("var_hist", "",choices=colnames[-1], selected=colnames[2])
+    if(input$plot_editados=='datos_originales') {
+      
+      # Get the data set with the appropriate name
+      colnames <- names(datasetInput())
+      
+      # Create the checkboxes and select them all by default
+      cols <- selectInput("var_hist", "", choices=colnames[-1], selected=colnames[2])
+      
+      return(cols)
+      
+    }
+    if(input$plot_editados=='datos_editados') {
+      
+      # Get the data set with the appropriate name
+      colnames <- paste(names(datasetInput()),"_p", sep="")
+      
+      # Create the checkboxes and select them all by default
+      cols <- selectInput("var_hist", "", choices=colnames[-1], selected=colnames[2])
+      
+      return(cols)
+      
+    }
+    
   })
   # Editar
   output$choose_columns2 <- renderUI({
@@ -465,22 +483,36 @@ shinyServer(function(input, output) {
     
     if(input$tipo_plot=='hist'){
       
+      if(input$plot_editados=='datos_originales') {
+      
     df <- datasetInputGvis()
     var <- as.numeric(df[,input$var_hist])
     
     if (length(which(is.na(var))) == 0) var <- var else
       var <- var[-which(is.na(var))]
     
-    histograma <- hist(x=var,breaks=as.numeric(input$breaks))
+    histograma <- hist(x=var)
     plot(histograma, col="black", border="white", ylab="Frecuencia", xlab="", main=paste(input$var_hist,sep=" "))
-    par(new=TRUE)
-    plot(density(x=var, bw=histograma$mids[2]-histograma$mids[1]), col=substr(x="green", start=3, stop=nchar(col)-2), main="", xlab="", ylab="", xaxt="n", yaxt="n", lwd=2)
+      }
+      if(input$plot_editados=='datos_editados') {
+        
+        df <- datasetInputGvis()
+        var <- as.numeric(df[,input$var_hist])
+        
+        if (length(which(is.na(var))) == 0) var <- var else
+          var <- var[-which(is.na(var))]
+        
+        histograma <- hist(x=var)
+        plot(histograma, col="black", border="white", ylab="Frecuencia", xlab="", main=paste(input$var_hist,sep=" "))
+      }
+      
+      
+      
     }
     
     })
   
   ### Reactive Values: TABLA
-  
   celdas_flags_input_tabla <- reactive(function(){
     
     if(is.na(input$selected_b)) return(NULL)
