@@ -31,9 +31,9 @@ shinyUI(pageWithSidebar(
         wellPanel(
         strong('Opciones'),br(),br(),  
         checkboxInput('header', 'Cabecera', TRUE),
-        selectInput('sep', 'Separador de campos',c(Coma=',',Semicolon=';',Tab='\t'),'Coma',FALSE),
+        selectInput('sep', 'Separador de campos',c('Coma'=',','Punto y coma'=';','Tabulador'='\t'),'Coma',FALSE),
         selectInput('quote', 'Delimitador de texto', c("Ninguno"='','Comillas dobles'='"','Comillas simples'="'"),'Ninguna',FALSE),
-        selectInput('dec', 'Separador decimal', c(Coma=",", Punto="."),'Punto',FALSE),
+        selectInput('dec', 'Separador decimal', c(Punto=".", Coma=","),'Punto',FALSE),
         numericInput('skip',"Leer desde línea:",value="0")
         )
         ),
