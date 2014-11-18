@@ -5,7 +5,6 @@ library(xts)
 suppressPackageStartupMessages(library(googleVis))
 
 ### Vectores de celdas y valores para eliminar
-
 celdas_flags_tabla <- list(NA)
 valores_flags_tabla <- list(NA)
 
@@ -25,17 +24,16 @@ shinyServer(function(input, output) {
   ### Logos
   output$logo <- renderImage({
     
-    filename <- "https://dl.dropboxusercontent.com/u/49775366/Ema/logo_ema_freplata.png"
+    filename <- "https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logo_ema_freplata.png"
+    list(src = filename, contentType = 'image/png')
     
-    list(src = filename,
-         contentType = 'image/png')
-  }, deleteFile = FALSE)
+    }, deleteFile = FALSE)
+  
   output$logo2 <- renderImage({
     
-    filename <- "https://dl.dropboxusercontent.com/u/49775366/Ema/logos_salinidad.png"
+    filename <- "https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logos_salinidad.png"
+    list(src = filename, contentType = 'image/png')
     
-    list(src = filename,
-         contentType = 'image/png')
   }, deleteFile = FALSE)
   
   ### Entradas de datos

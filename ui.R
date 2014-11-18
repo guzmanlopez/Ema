@@ -250,12 +250,12 @@ shinyUI(pageWithSidebar(
                                  p(style="text-align:justify",'La mayor parte del software empleado para desarrollar esta aplicación es libre, eso quiere decir que garantiza al usuario la libertad de poder usarlo, estudiarlo, compartirlo (copiarlo), y modificarlo. El software R es un proyecto de software libre que es colaborativo y tiene muchos contribuyentes.'),
                                  tags$hr(),
                                  h3(p(strong('Guía de usuario'))),
-                                 HTML('<div style="clear: left;"><img src="https://dl.dropboxusercontent.com/u/49775366/Ema/PDF.png" alt="" style="width: 5%; height: 5%; float: left; margin-right:5px" /></div>'),
+                                 HTML('<div style="clear: left;"><img src="https://github.com/guzmanlopez/Ema/raw/master/Figuras/PDF.png?raw=true" alt="" style="width: 5%; height: 5%; float: left; margin-right:5px" /></div>'),
                                  br(),
-                                 a('Ema web app', href="https://dl.dropboxusercontent.com/u/49775366/Ema/Gu%C3%ADa%20de%20usuario%20Ema%20web%20app.pdf", target="_blank"),
+                                 a('Ema web app', href="https://github.com/guzmanlopez/Ema/blob/master/Manual/Gu%C3%ADa%20de%20usuario%20Ema%20web%20app.pdf?raw=true", target="_blank"),
                                  tags$hr(),
                                  h3(p(strong('Código fuente'))),
-                                 HTML('<div style="clear: left;"><img src="https://dl.dropboxusercontent.com/u/49775366/Ema/github-10-512.png" alt="" style="width: 5%; height: 5%; float: left; margin-right:5px" /></div>'),
+                                 HTML('<div style="clear: left;"><img src="https://github.com/guzmanlopez/Ema/blob/master/Figuras/github-10-512.png?raw=true" alt="" style="width: 5%; height: 5%; float: left; margin-right:5px" /></div>'),
                                  br(),
                                  a('Repositorio GitHub', href="https://github.com/guzmanlopez/Ema.git", target="_blank"),
                                  tags$hr(),
@@ -267,9 +267,9 @@ shinyUI(pageWithSidebar(
                                  p(style="text-align:justify",strong('Jeffrey A. Ryan & Joshua M. Ulrich (2013).'),'xts: eXtensible Time Series. R package version 0.9-7.',a("http://r-forge.r-project.org/projects/xts/",href="http://r-forge.r-project.org/projects/xts/",target="_blank")),
                                  p(style="text-align:justify",strong('Karoly Antal. (2012).'),'gnumeric: Read data from files readable by gnumeric. R package version 0.7-2.',a("http://CRAN.R-project.org/package=gnumeric",href="http://CRAN.R-project.org/package=gnumeric",target="_blank")),
                                  tags$hr(),
-                                 HTML('<div style="clear: left;"><img src="https://dl.dropboxusercontent.com/u/49775366/Ema/foto_perfil.jpg" alt="" style="float: left; margin-right:5px" /></div>'),
+                                 HTML('<div style="clear: left;"><img src="https://github.com/guzmanlopez/Ema/blob/master/Figuras/foto_perfil.jpg?raw=true" alt="" style="float: left; margin-right:5px" /></div>'),
                                  strong('Autor'),
-                                 p(a('Guzmán López', href="http://www.linkedin.com/pub/guzm%C3%A1n-l%C3%B3pez/59/230/812", target="_blank"),' - guzilop@gmail.com',br(),'Biólogo | Asistente para el manejo de información oceanográfica',br(),a('Proyecto FREPLATA - URU/09/G31',href="http://www.freplata.org/", target="_blank")),
+                                 p(a('Guzmán López', href="https://www.linkedin.com/pub/guzm%C3%A1n-l%C3%B3pez/59/230/812", target="_blank"),' - guzilop@gmail.com',br(),'Biólogo | Asistente para el manejo de información oceanográfica',br(),a('Proyecto FREPLATA - URU/09/G31',href="http://www.freplata.org/", target="_blank")),
                                  br()) # Acerca de este programa
                         ))
 ))
