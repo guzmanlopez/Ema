@@ -3,15 +3,23 @@ Ema
 
 Aplicación web de Shiny para visualizar, analizar y editar de manera interactiva datos oceanográficos.
 
-
 Requisitos
 ===
 
+```R
 library(shiny)
 library(oce)
 library(gnumeric)
 library(xts)
 library(googleVis)
+```
+
+Ejecutar app desde R: 
+===
+
+```R
+runGitHub("Ema", "guzmanlopez")
+```
 
 Capturas de pantalla
 ===
