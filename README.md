@@ -7,18 +7,18 @@ Requisitos
 ===
 
 ```R
-library(shiny)
-library(oce)
-library(gnumeric)
-library(xts)
-library(googleVis)
+library('shiny')
+library('oce')
+library('gnumeric')
+library('xts')
+library('googleVis')
 ```
 
 Ejecutar app desde R: 
 ===
 
 ```R
-runGitHub("Ema", "guzmanlopez")
+runGitHub('Ema', 'guzmanlopez')
 ```
 
 Capturas de pantalla
@@ -33,11 +33,17 @@ Línea de tiempo:
 X vs Y:
 ![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-03.png)
 
-Edición de "outliers":
+Histograma:
 ![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-04.png)
 
-Estadísticas básicas:
+Edición de "outliers":
 ![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-05.png)
 
-Convertir conductividad a salinidad (UPS):
+Estadísticas básicas:
 ![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-06.png)
+
+Convertir conductividad a salinidad (UPS):
+![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-07.png)
+
+Acerca de esta app:
+![Image](https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/captura-de-pantalla-Ema-08.png)
