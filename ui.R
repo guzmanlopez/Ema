@@ -13,7 +13,7 @@ shinyUI(pageWithSidebar(
     
     conditionalPanel(
       condition="input.tabs!='Convertir conductividad'",
-      imageOutput(outputId="logo",height=50)), ### LOGO
+      HTML('<div style="clear: left;"><img src="https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logo_ema_freplata.png"/></div>')),
     
     ### TABLA DE DATOS ####
     
@@ -159,7 +159,7 @@ shinyUI(pageWithSidebar(
     
       conditionalPanel(
         condition="input.tabs=='Convertir conductividad'",
-        imageOutput(outputId="logo2",height=70), # LOGO SAL
+        HTML('<div style="clear: left;"><img src="https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logos_salinidad.png"/></div>'),
         tags$hr(),
         helpText("Nota: calcula la salinidad a partir de la conductividad, la temperatura y la presión.", # Nota
                "Se utiliza el algoritmo de la UNESCO descrito por Fofonoff and Millard (1983).",

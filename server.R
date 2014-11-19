@@ -21,21 +21,6 @@ names(valores_flags_tabla) <- columnas
 
 shinyServer(function(input, output) {
   
-  ### Logos
-  output$logo <- renderImage({
-    
-    filename <- "https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logo_ema_freplata.png"
-    list(src = filename, contentType = 'image/png')
-    
-    }, deleteFile = FALSE)
-  
-  output$logo2 <- renderImage({
-    
-    filename <- "https://raw.githubusercontent.com/guzmanlopez/Ema/master/Figuras/logos_salinidad.png"
-    list(src = filename, contentType = 'image/png')
-    
-  }, deleteFile = FALSE)
-  
   ### Entradas de datos
   datasetInput <- reactive({
     if (is.null(input$file1) & is.null(input$file2)) return(NULL) else
